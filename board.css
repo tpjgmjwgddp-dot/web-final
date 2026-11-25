@@ -1,0 +1,51 @@
+/* board.css : 보드(index.html) 전용 모양입니다.
+   지금은 수수한 기본 모양입니다. #1의 카드와 격자 디자인으로 바꿔 쓰세요(.card, .badge, .poster-fallback 등). */
+
+/* 카드 격자: 칸 너비 150px 이상, 화면이 넓어지면 열 수가 늘어남(360px에서 가로 스크롤 없음) */
+.board {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(150px, 100%), 1fr));
+  gap: 12px;
+}
+
+/* 카드 한 장(카드 전체가 상세로 가는 링크) */
+.card {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: var(--surface);
+  color: inherit;
+  text-decoration: none;
+}
+
+.card:hover,
+.card:focus-visible {
+  border-color: var(--accent);
+}
+
+.card h2 {
+  margin: 8px 10px 2px;
+  font-size: 1rem;
+  line-height: 1.35;
+}
+
+.card .year {
+  margin: 0 10px 10px;
+  color: var(--muted);
+  font-size: 0.875rem;
+}
+
+/* 평점 배지(포스터 오른쪽 위) */
+.badge {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  padding: 2px 8px;
+  border-radius: 999px;
+  background: var(--badge);
+  color: #ffffff;
+  font-size: 0.85rem;
+  font-weight: 700;
+}

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>영화 상세</title>
+  <link rel="stylesheet" href="common.css">
+  <link rel="stylesheet" href="detail.css">
+</head>
+<body>
+  <!-- 공용 헤더: common.js가 채웁니다 -->
+  <header id="site-header"></header>
+
+  <main>
+    <p class="back"><a href="index.html">보드로 돌아가기</a></p>
+
+    <!-- 영화 정보: detail.js가 movie/{id} 응답으로 채웁니다(상태 문구는 setState가 이 바로 위에 넣음) -->
+    <article id="detail"></article>
+  </main>
+
+  <!-- 공용 푸터: common.js가 TMDB 고지를 채웁니다. 이 페이지에 다른 자료를 쓰면 그 출처를 이 안에 한 줄 더 씁니다 -->
+  <footer id="site-footer"></footer>
+
+  <script src="config.js"></script>
+  <script src="keys.js"></script>
+  <script src="sample.js"></script>
+  <script src="common.js"></script>
+  <script src="detail.js"></script>
+</body>
+</html>

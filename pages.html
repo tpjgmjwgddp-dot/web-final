@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>동료 페이지</title>
+  <link rel="stylesheet" href="common.css">
+</head>
+<body>
+  <!-- 공용 헤더: common.js가 채웁니다 -->
+  <header id="site-header"></header>
+
+  <main>
+    <h1>동료 페이지</h1>
+    <!-- 카드는 common.js가 config.js의 PAGES로 그립니다(이 파일은 고치지 않아도 됨).
+         PR을 Merge한 뒤 config.js의 PAGES에 { id: "보낸사람아이디", name: "페이지 이름" }, 한 줄을 더하면 카드가 생깁니다 -->
+    <section id="peer-pages" class="peer-pages"></section>
+  </main>
+
+  <!-- 공용 푸터: common.js가 채웁니다 -->
+  <footer id="site-footer"></footer>
+
+  <script src="config.js"></script>
+  <script src="keys.js"></script>
+  <script src="sample.js"></script>
+  <script src="common.js"></script>
+</body>
+</html>

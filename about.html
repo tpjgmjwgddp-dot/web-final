@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>고지</title>
+  <link rel="stylesheet" href="common.css">
+</head>
+<body>
+  <!-- 공용 헤더: common.js가 채웁니다 -->
+  <header id="site-header"></header>
+
+  <main>
+    <h1>고지</h1>
+    <!-- TODO 고지: 네 항목을 채웁니다. 제목은 그대로 두고 각 제목 아래에 <p>나 <ul>로 씁니다 -->
+
+    <section>
+      <h2>출처와 라이선스</h2>
+      <!-- 쓸 것: TMDB 고지 문구(#1 푸터의 문구)와 TMDB 주소(https://www.themoviedb.org),
+           KOBIS(영화진흥위원회 영화관입장권 통합전산망)의 이름과 주소,
+           내 플러스원 API와 PR로 받은 동료 페이지 API의 이름, 제공기관, 이용 조건(라이선스),
+           포스터나 표지, 사진을 어느 API의 이미지 주소로 불러오는지 -->
+    </section>
+
+    <section>
+      <h2>키 관리 방법</h2>
+      <!-- 쓸 것(세 가지):
+           1. 키는 keys.js에 적어 저장소에 함께 올립니다(공개). 브라우저가 부르는 키는 어떻게 해도
+              배포 사이트에서 보이기 때문입니다. 플러스원 페이지의 키는 그 폴더의 keys.js에 있습니다.
+           2. 그래서 무료 교육용 키만 씁니다(결제 정보가 연결된 키, 비밀번호, 토큰은 넣지 않음. 학기가 끝나면 재발급 권장).
+           3. 실서비스라면 키를 브라우저에 보내지 않고 서버(백엔드, 서버리스 함수)가 쥐고 대신 호출합니다. -->
+    </section>
+
+    <section>
+      <h2>입력값의 행방</h2>
+      <!-- 쓸 것: 사용자가 입력한 값이 어디로 가는지. 문장 예: 검색어는 TMDB 요청 주소에 담겨 TMDB로 가고 이 사이트에는 저장되지 않음.
+           박스오피스는 어제 날짜만 KOBIS로 보냄. 플러스원과 동료 페이지에 입력하는 값(예: 지역, 음식 이름)이 어느 API로 가는지도 적습니다 -->
+    </section>
+
+    <section>
+      <h2>저장값 지우는 법</h2>
+      <!-- 쓸 것: 이 사이트가 브라우저에 저장하는 값과 지우는 법. 문장 예: 찜은 이 브라우저의 localStorage(final-liked)에만 있고 찜 모두 지우기로 지움.
+           동료 페이지가 저장하는 값이 있으면 그 페이지의 README를 보고 함께 적습니다 -->
+    </section>
+  </main>
+
+  <!-- 공용 푸터: common.js가 채웁니다 -->
+  <footer id="site-footer"></footer>
+
+  <script src="config.js"></script>
+  <script src="keys.js"></script>
+  <script src="sample.js"></script>
+  <script src="common.js"></script>
+</body>
+</html>

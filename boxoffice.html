@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>어제 박스오피스</title>
+  <link rel="stylesheet" href="common.css">
+  <link rel="stylesheet" href="boxoffice.css">
+</head>
+<body>
+  <!-- 공용 헤더: common.js가 채웁니다 -->
+  <header id="site-header"></header>
+
+  <main>
+    <h1>어제 박스오피스</h1>
+    <p class="bo-note">영화진흥위원회 통합전산망(KOBIS)의 일별 박스오피스입니다(어제까지 집계).</p>
+
+    <!-- 순위 목록: boxoffice.js가 KOBIS 응답으로 채웁니다(상태 문구는 setState가 이 바로 위에 넣음) -->
+    <ol id="boxoffice" class="boxoffice"></ol>
+  </main>
+
+  <!-- 공용 푸터: common.js가 TMDB 고지를 채우고, 아래 KOBIS 출처 한 줄은 그대로 남습니다 -->
+  <footer id="site-footer">
+    <p>박스오피스 자료: 영화진흥위원회 영화관입장권 통합전산망(KOBIS) 오픈 API</p>
+  </footer>
+
+  <script src="config.js"></script>
+  <script src="keys.js"></script>
+  <script src="sample.js"></script>
+  <script src="common.js"></script>
+  <script src="boxoffice.js"></script>
+</body>
+</html>

@@ -1,0 +1,65 @@
+/* boxoffice.css : 박스오피스(boxoffice.html) 전용 모양입니다.
+   지금은 수수한 기본 모양입니다. 내 사이트의 카드 디자인에 맞춰 바꿔 쓰세요. */
+
+.bo-note {
+  margin: 0 0 12px;
+  color: var(--muted);
+}
+
+/* 순위 목록: 한 줄에 순위, 표지, 글. 좁은 화면에서도 가로 스크롤 없음 */
+.boxoffice {
+  display: grid;
+  gap: 10px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.bo-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 12px;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: var(--surface);
+}
+
+.bo-rank {
+  flex: 0 0 2rem;
+  font-size: 1.4rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+/* 표지 칸: 지금은 대체 표지, 영화 포스터 매칭을 하면 <img class="poster">가 들어감 */
+.bo-poster {
+  flex: 0 0 64px;
+  overflow: hidden;
+  border-radius: 6px;
+}
+
+.bo-poster .poster-fallback {
+  font-size: 1.5rem;
+}
+
+.bo-info {
+  flex: 1;
+  min-width: 0;          /* 긴 영화 제목이 줄을 바꾸게 */
+}
+
+.bo-info h2 {
+  margin: 0 0 2px;
+  font-size: 1.05rem;
+  line-height: 1.35;
+}
+
+.bo-info p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.875rem;
+}
+
+.bo-change {
+  font-weight: 600;
+}

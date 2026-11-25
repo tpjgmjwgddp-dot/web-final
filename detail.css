@@ -1,0 +1,30 @@
+/* detail.css : 상세(detail.html) 전용 모양입니다.
+   지금은 수수한 기본 모양입니다. #1의 상세 페이지 디자인으로 바꿔 쓰세요. */
+
+.back {
+  margin: 16px 0 0;
+}
+
+/* 영화 정보: 좁은 화면은 위아래로, 640px 이상은 포스터 왼쪽 + 글 오른쪽 */
+#detail {
+  display: grid;
+  gap: 16px;
+  margin-top: 16px;
+}
+
+#detail .poster,
+#detail .poster-fallback {
+  width: min(240px, 100%);
+  border-radius: 10px;
+}
+
+#detail h1 {
+  margin-top: 0;
+}
+
+@media (min-width: 640px) {
+  #detail {
+    grid-template-columns: 240px 1fr;
+    align-items: start;
+  }
+}

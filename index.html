@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>영화 보드</title>
+  <link rel="stylesheet" href="common.css">
+  <link rel="stylesheet" href="board.css">
+</head>
+<body>
+  <!-- 공용 헤더: common.js가 서비스 이름과 메뉴를 채웁니다(이름은 config.js) -->
+  <header id="site-header"></header>
+
+  <main>
+    <h1>지금 상영 중</h1>
+
+    <!-- TODO 필수 2: #3의 검색창 <input id="q" type="search">을 이 자리에(Enter를 치면 search/movie로 다시 불러옴) -->
+    <!-- TODO 필수 3: #3의 정렬 상자 <select id="sort">를 이 자리에(2가지 이상) -->
+    <!-- TODO 필수 5: 편수와 찜 개수 <p><span id="count"></span>, 찜 <span id="likeCount">0</span>편</p>, 찜 모두 지우기 버튼 <button type="button">(새로 만듦) -->
+    <!-- #3에서 옮겨 올 자리: 실습과제 #3 index.html의 도구 막대(<div class="toolbar">)를 여기에 옮기고, 끝낸 위의 할 일 주석은 지웁니다
+         #3의 보기 라디오(전체, 내 영화, 박스오피스)는 TMDB 영화가 모두 같은 종류라 빼도 됩니다(빼면 getView의 보기 줄도 지움) -->
+
+    <!-- 상태 문구(로딩, 빈 결과, 오류)는 setState가 보드 바로 위에 만들어 넣습니다 -->
+    <section id="board" class="board"></section>
+  </main>
+
+  <!-- 공용 푸터: common.js가 TMDB 고지를 채웁니다. 이 페이지에 다른 자료를 쓰면 그 출처를 이 안에 한 줄 더 씁니다 -->
+  <footer id="site-footer"></footer>
+
+  <!-- 순서: 설정 ⇒ 키(keys.js의 키가 비면 샘플 모드) ⇒ 샘플 ⇒ 공용 도구 ⇒ 이 페이지 -->
+  <script src="config.js"></script>
+  <script src="keys.js"></script>
+  <script src="sample.js"></script>
+  <script src="common.js"></script>
+  <script src="board.js"></script>
+</body>
+</html>
